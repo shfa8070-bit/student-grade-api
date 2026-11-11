@@ -38,4 +38,10 @@ public class StudentController {
     public List<Student> getStudents() {
         return students;
     }
+
+    @GetMapping("/health")
+    public Map<String, String> health() {
+        logger.info("Health check called");
+        return Map.of("status", "UP");
+    }
 }
