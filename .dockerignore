@@ -1,0 +1,5 @@
+.dockerignore (also in the project root)
+target/
+.git/
+.idea/
+.vscode/ *.log
